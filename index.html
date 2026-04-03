@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewishTimeLine - Explore Jewish Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="#">
+    <meta name="description" content="Interactive timeline of Jewish events from creation to 2180.">
+</head>
+<body class="bg-gray-900 text-white font-inter min-h-screen">
+    <header class="p-6 bg-gray-800/80 backdrop-blur-md border-b border-gray-700">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-blue-400">JewishTimeLine</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">About</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Interactive Jewish Calendar</h2>
+            <p class="text-gray-300 mb-6">Explore events from creation to 2180. Use filters to customize your view.</p>
+            <div class="flex space-x-4 mb-6">
+                <button id="filter-holidays" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Holidays</button>
+                <button id="filter-historical" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition">Historical</button>
+                <button id="filter-all" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition">All Events</button>
+            </div>
+        </section>
+        <section class="bg-gray-800/60 backdrop-blur-sm rounded-xl p-6 border border-gray-700 shadow-2xl">
+            <div id="calendar-container" class="overflow-x-auto">
+                <!-- Calendar grid will be populated by app.js -->
+            </div>
+        </section>
+        <section class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">Event Details</h3>
+            <div id="event-details" class="bg-gray-800/80 backdrop-blur-md rounded-lg p-6 border border-gray-700">
+                <p class="text-gray-300">Select an event to see details here.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="p-6 bg-gray-800/80 backdrop-blur-md border-t border-gray-700 mt-8">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2023 JewishTimeLine. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
