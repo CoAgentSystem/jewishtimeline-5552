@@ -43,6 +43,15 @@ document.getElementById('filter-holidays').addEventListener('click', () => filte
 document.getElementById('filter-historical').addEventListener('click', () => filterEvents('historical'));
 document.getElementById('filter-all').addEventListener('click', () => filterEvents('all'));
 
+// Language switch functionality
+document.getElementById('language-select').addEventListener('change', function() {
+    const lang = this.value;
+    // For now, just log the selected language and show an alert.
+    // In a real implementation, you would update the entire UI text.
+    console.log('Language switched to:', lang);
+    alert(`Language switched to ${lang === 'he' ? 'Hebrew' : 'English'}. Full translation would be implemented here.`);
+});
+
 // Initial render
 renderCalendar();
 
