@@ -43,7 +43,7 @@ const MOCK_DATA = [
     {
         id: 6,
         name: "Rosh Hashanah",
-        date: "1 Tishrei, Year 5784 (2023 CE)",
+        date: "1 Tishrei, Year 5787 (2026 CE)",
         type: "holiday",
         description: "Jewish New Year, a time of reflection and prayer.",
         source: "Leviticus 23:24"
