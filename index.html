@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,21 +16,21 @@
             <h1 class="text-3xl font-bold text-blue-400">JewishTimeLine</h1>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
-                    <li><a href="#" class="hover:text-blue-300 transition">About</a></li>
-                    <li><a href="#" class="hover:text-blue-300 transition">Contact</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">בית</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">אודות</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">צור קשר</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="container mx-auto p-6">
         <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Interactive Jewish Calendar</h2>
-            <p class="text-gray-300 mb-6">Explore events from creation to 2180. Use filters to customize your view.</p>
+            <h2 class="text-2xl font-semibold mb-4">לוח שנה יהודי אינטראקטיבי</h2>
+            <p class="text-gray-300 mb-6">חקור אירועים מבריאת העולם עד שנת 2180. השתמש במסננים כדי להתאים את התצוגה.</p>
             <div class="flex space-x-4 mb-6">
-                <button id="filter-holidays" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Holidays</button>
-                <button id="filter-historical" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition">Historical</button>
-                <button id="filter-all" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition">All Events</button>
+                <button id="filter-holidays" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition">חגים</button>
+                <button id="filter-historical" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition">היסטוריה</button>
+                <button id="filter-all" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition">כל האירועים</button>
             </div>
         </section>
         <section class="bg-gray-800/60 backdrop-blur-sm rounded-xl p-6 border border-gray-700 shadow-2xl">
@@ -39,18 +39,19 @@
             </div>
         </section>
         <section class="mt-8">
-            <h3 class="text-xl font-semibold mb-4">Event Details</h3>
+            <h3 class="text-xl font-semibold mb-4">פרטי אירוע</h3>
             <div id="event-details" class="bg-gray-800/80 backdrop-blur-md rounded-lg p-6 border border-gray-700">
-                <p class="text-gray-300">Select an event to see details here.</p>
+                <p class="text-gray-300">בחר אירוע כדי לראות פרטים כאן.</p>
             </div>
         </section>
     </main>
     <footer class="p-6 bg-gray-800/80 backdrop-blur-md border-t border-gray-700 mt-8">
         <div class="container mx-auto text-center text-gray-400">
-            <p>&copy; 2023 JewishTimeLine. All rights reserved.</p>
+            <p>&copy; 2023 JewishTimeLine. כל הזכויות שמורות.</p>
         </div>
     </footer>
     <script src="data.js"></script>
     <script src="app.js"></script>
+  <script src="http://localhost:3001/api/injector.js" data-coagent="true"></script>
 </body>
 </html>
